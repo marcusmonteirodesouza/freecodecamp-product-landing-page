@@ -1,0 +1,38 @@
+{
+  "name": "freecodecamp-product-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ./**/*.{html,json,css,md}",
+    "lint": "standard --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.19.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": []
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{html,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "./**/*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  }
+}
