@@ -1,7 +1,7 @@
 {
   "name": "freecodecamp-product-landing-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "My solution to FreeCodeCamp's Build a Product Landing Page challenge",
   "main": "index.js",
   "scripts": {
     "format": "prettier --write ./**/*.{html,json,css,md}",
