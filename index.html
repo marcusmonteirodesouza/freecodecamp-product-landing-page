@@ -115,10 +115,24 @@
       </ul>
     </section>
     <section id="testimonials">
-      <h2 class="ttc">testimonials from satisfied customers</h2>
+      <h2 class="tc ttc">testimonials from satisfied customers</h2>
+      <div id="testimonial">
+        <div class="flex justify-center items-center">
+          <img class="br-100 mw4" id="testimonial-image" />
+        </div>
+        <blockquote class="tc">
+          <p>- <span id="testimonial-content"></span></p>
+          <footer id="testimonial-author">
+            <cite id="testimonial-job-title"></cite>
+          </footer>
+        </blockquote>
+        <div class="flex justify-center items-center">
+          <button type="button" id="next-testimonial-button">See more</button>
+        </div>
+      </div>
     </section>
     <section id="contact">
-      <h2>So, are you ready to get out there with us?</h2>
+      <h2 class="tc">So, are you ready to get out there with us?</h2>
       <form>
         <div>
           <label for="email">email</label>
@@ -129,6 +143,7 @@
         </div>
       </form>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

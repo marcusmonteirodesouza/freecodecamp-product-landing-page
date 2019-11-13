@@ -24,7 +24,9 @@
   "standard": {
     "parser": "babel-eslint",
     "globals": [
-      "fetch"
+      "fetch",
+      "CustomEvent",
+      "faker"
     ]
   },
   "husky": {
