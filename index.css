@@ -16,7 +16,7 @@ html {
 }
 
 .grid-template {
-  grid-template-rows: min-content min-content 30rem repeat(3, 1fr);
+  grid-template-rows: min-content min-content 30rem 1fr 0.45fr 1fr;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -32,7 +32,7 @@ html {
   grid-column: 1 / span 4;
 }
 
-#video {
+#video-section {
   grid-row: 3 / span 1;
   grid-column: 1 / span 4;
 }
@@ -50,4 +50,7 @@ html {
 #contact {
   grid-row: 6 / span 1;
   grid-column: 1 / span 4;
+}
+
+@media only screen and (min-width: 30em) {
 }

@@ -21,11 +21,11 @@
   </head>
 
   <body class="grid grid-template">
-    <header id="header">
-      <nav>
+    <header class="fixed w-100 bg-black-90" id="header">
+      <nav id="nav-bar">
         <ul class="list pa0 flex justify-evenly items-center ttc">
           <li>
-            <a href="#"
+            <a class="nav-link" href="#"
               ><img
                 class="mw2"
                 id="header-image"
@@ -34,14 +34,26 @@
             /></a>
           </li>
 
-          <li><a class="ttc f6" href="#presentation">presentation</a></li>
-          <li><a class="ttc f6" href="#features">features</a></li>
-          <li><a class="ttc f6" href="#testimonials">testimonials</a></li>
-          <li><a class="ttc f6" href="#contact">contact</a></li>
+          <li>
+            <a class="nav-link link ttc f6 white" href="#presentation"
+              >presentation</a
+            >
+          </li>
+          <li>
+            <a class="nav-link link ttc f6 white" href="#features">features</a>
+          </li>
+          <li>
+            <a class="nav-link link ttc f6 white" href="#testimonials"
+              >testimonials</a
+            >
+          </li>
+          <li>
+            <a class="nav-link link ttc f6 white" href="#contact">contact</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="tc" id="presentation">
+    <section class="mt5 tc" id="presentation">
       <h2>Do you want to be extraordinary?</h2>
       <p>If you're like everyone else, you probably do</p>
       <p>And you've come to the right place</p>
@@ -49,8 +61,9 @@
         We are proud to present your one-step solution to an extraordinary life!
       </p>
     </section>
-    <section id="video">
+    <section id="video-section">
       <iframe
+        id="videp"
         class="w-100 h-100"
         src="https://www.youtube.com/embed/8NyParAaNos?start=61"
         frameborder="0"
@@ -133,14 +146,18 @@
     </section>
     <section id="contact">
       <h2 class="tc">So, are you ready to get out there with us?</h2>
-      <form>
-        <div>
-          <label for="email">email</label>
-          <input id="email" type="email" name="email" />
-        </div>
-        <div>
-          <input id="submit" type="submit" />
-        </div>
+      <form
+        id="form"
+        class="flex justify-center items-center"
+        action="https://www.freecodecamp.com/email-submit"
+      >
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+        <input id="submit" type="submit" value="Let's change my life!" />
       </form>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
