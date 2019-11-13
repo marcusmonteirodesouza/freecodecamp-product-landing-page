@@ -16,7 +16,7 @@ html {
 }
 
 .grid-template {
-  grid-template-rows: min-content min-content 1.5fr repeat(3, 1fr);
+  grid-template-rows: min-content min-content 30rem repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
 }
 
