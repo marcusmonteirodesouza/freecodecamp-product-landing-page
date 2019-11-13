@@ -5,6 +5,10 @@ html {
 
 /* Flex */
 
+.flex {
+  display: flex;
+}
+
 .justify-evenly {
   justify-content: space-evenly;
 }
