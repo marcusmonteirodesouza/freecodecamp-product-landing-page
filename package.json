@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write ./**/*.{html,json,css,md}",
+    "purge-css": "node purge-css.js",
     "lint": "standard --fix",
     "start": "serve"
   },
@@ -16,6 +17,7 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.19.0",
+    "purgecss": "^1.4.1",
     "serve": "^11.2.0",
     "standard": "^14.3.1"
   },
